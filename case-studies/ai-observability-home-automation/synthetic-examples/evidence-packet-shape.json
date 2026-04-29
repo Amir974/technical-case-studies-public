@@ -1,0 +1,130 @@
+{
+  "sample_type": "synthetic_exact_window_evidence_packet",
+  "synthetic": true,
+  "operator_question": "Why did the primary actuator change from hold to active during the requested window when expected intent appeared to remain hold?",
+  "exact_window": {
+    "start": "2026-03-18T14:20:00Z",
+    "end": "2026-03-18T14:35:00Z",
+    "source": "operator_specified",
+    "timezone": "UTC"
+  },
+  "evidence_sources": [
+    {
+      "source_type": "intent_evaluator_summary",
+      "available": true,
+      "window_coverage": "complete",
+      "synthetic_record_count": 3
+    },
+    {
+      "source_type": "actuator_state_history",
+      "available": true,
+      "window_coverage": "complete",
+      "synthetic_record_count": 4
+    },
+    {
+      "source_type": "guard_evaluator_summary",
+      "available": true,
+      "window_coverage": "partial",
+      "synthetic_record_count": 2
+    },
+    {
+      "source_type": "external_input_summary",
+      "available": true,
+      "window_coverage": "complete",
+      "synthetic_record_count": 1
+    }
+  ],
+  "expected_intent": {
+    "state": "hold",
+    "first_seen": "2026-03-18T14:20:00Z",
+    "last_seen": "2026-03-18T14:35:00Z",
+    "changed_during_window": false,
+    "basis": [
+      "intent_evaluator_summary",
+      "guard_evaluator_summary"
+    ]
+  },
+  "observed_state": {
+    "actuator_label": "primary_actuator",
+    "state_before_window": "hold",
+    "state_during_window": "active",
+    "transition_time": "2026-03-18T14:27:12Z",
+    "state_after_window": "active",
+    "basis": [
+      "actuator_state_history"
+    ]
+  },
+  "detector_events": [
+    {
+      "detector_type": "expected_vs_observed_mismatch",
+      "severity": "medium",
+      "event_time": "2026-03-18T14:27:12Z",
+      "summary": "Observed actuator state changed to active while expected intent remained hold.",
+      "supporting_sources": [
+        "intent_evaluator_summary",
+        "actuator_state_history"
+      ]
+    },
+    {
+      "detector_type": "external_input_possible",
+      "severity": "low",
+      "event_time": "2026-03-18T14:26:58Z",
+      "summary": "A synthetic external input marker appeared shortly before the actuator transition.",
+      "supporting_sources": [
+        "external_input_summary"
+      ]
+    },
+    {
+      "detector_type": "guard_context_incomplete",
+      "severity": "low",
+      "event_time": "2026-03-18T14:27:00Z",
+      "summary": "Guard coverage is partial near the observed transition, limiting certainty.",
+      "supporting_sources": [
+        "guard_evaluator_summary"
+      ]
+    }
+  ],
+  "verdict": {
+    "classification": "unexpected_state_change_with_external_input_possible",
+    "operator_summary": "The actuator changed to active during the exact window while expected intent remained hold. The strongest synthetic explanation is an external input or out-of-band influence, but partial guard evidence prevents a final conclusion.",
+    "domain_severity": "medium",
+    "requires_human_review": true
+  },
+  "explanation_inputs": {
+    "primary_facts": [
+      "Expected intent remained hold for the full requested window.",
+      "Observed actuator state changed from hold to active at 2026-03-18T14:27:12Z.",
+      "A synthetic external input marker appeared shortly before the transition."
+    ],
+    "counter_evidence": [
+      "No intent evaluator transition to active was present in the packet.",
+      "No complete guard approval record was available at the transition time."
+    ],
+    "excluded_actions": [
+      "Do not actuate.",
+      "Do not mutate controller state.",
+      "Do not infer private system identifiers."
+    ]
+  },
+  "pipeline_health": {
+    "status": "degraded_but_usable",
+    "collection_complete": false,
+    "failed_stages": [],
+    "warnings": [
+      "Guard evaluator coverage is partial near the transition time."
+    ]
+  },
+  "confidence": {
+    "level": "medium",
+    "rationale": "Intent and observed-state evidence are complete for the window, but guard evidence is partial near the transition."
+  },
+  "evidence_gaps": [
+    "Complete guard evaluator record for 2026-03-18T14:26:30Z through 2026-03-18T14:28:00Z.",
+    "Confirmation of whether the external input marker represents an authorized operator action, an integration event, or a stale signal."
+  ],
+  "next_checks": [
+    "Review the bounded external input summary for the transition minute.",
+    "Re-run the packet when complete guard coverage is available.",
+    "Compare the actuator command surface against observed state for the same exact window."
+  ]
+}
