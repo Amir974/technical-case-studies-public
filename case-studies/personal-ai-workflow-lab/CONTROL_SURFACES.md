@@ -59,6 +59,16 @@ That meant chat carried status, one-item lookup, evaluation requests, and explic
 
 The product tradeoff was intentional: optimize the first surface for reachability, then add depth only where the workflow proved that review density mattered.
 
+## Alternatives Considered
+
+| Option | Reason to consider it | Why I did not choose it as the main path |
+| --- | --- | --- |
+| Telegram only | Lowest friction, fastest to ship, and available from mobile. | Dense comparison, evidence coverage, lifecycle history, and missing-fact review became hard to scan in chat. |
+| Dashboard only | Stronger layout for queues, detail panes, and slower review. | It made simple status checks and one-item decisions heavier than they needed to be. |
+| General chat assistant | Flexible and familiar, with little product surface design required. | It blurred scope, evidence, allowed actions, and state mutation boundaries. |
+| Fully automated workflow | Attractive for speed and reduced manual work. | The workflow depended on judgment, missing-fact review, and explicit acceptance, so automation stayed below the decision boundary. |
+| Split control and review surfaces | Keeps fast commands fast while giving dense review enough room. | This added surface coordination work, but it matched the actual interaction density of the workflow. |
+
 ## What Belongs In The Dashboard
 
 The dashboard is the right surface for comparison, prioritization, lifecycle review, evidence inspection, denser AI evaluation review, missing-fact scans, history availability, and decision preparation.

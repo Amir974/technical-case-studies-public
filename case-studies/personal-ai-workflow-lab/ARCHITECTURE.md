@@ -100,6 +100,22 @@ See [CONTROL_SURFACES.md](CONTROL_SURFACES.md) for the Telegram vs dashboard dia
 
 An evidence packet can include request scope, item reference, source coverage, known facts, missing facts, prior state, AI task, allowed actions, and audit policy.
 
+A synthetic packet for this case study looks roughly like this:
+
+```json
+{
+  "item_id": "ITEM-123",
+  "request_scope": "evaluate for fit and gaps",
+  "source_coverage": ["source-message", "stored-state", "prior-decisions"],
+  "known_facts": ["received 2026-04-12", "prior review: parked", "fit: partial"],
+  "missing_facts": ["timeline not confirmed", "secondary source not reconciled"],
+  "prior_state": "parked",
+  "allowed_actions": ["approve", "park", "close", "investigate"],
+  "ai_task": "summarize fit, name gaps, suggest next check",
+  "review_goal": "human lifecycle decision"
+}
+```
+
 The important behavior is gap visibility. When evidence is incomplete, the AI response should name the missing facts and avoid a stronger conclusion than the packet supports.
 
 See [SYNTHETIC_EXAMPLES.md](SYNTHETIC_EXAMPLES.md) for the evidence packet anatomy diagram and synthetic packet walkthrough.

@@ -104,9 +104,10 @@ The helper layer gathers and reconciles public-safe categories of context:
 
 This layer is deliberately separate from AI reasoning. Packet generation is not magic, and the AI is not being asked to infer from vague background memory. The runtime and helpers assemble a bounded packet first. AI receives the packet afterward and should stay inside it.
 
-Some context collection is implemented as current helper behavior in the underlying workflows. Some richer prior-context search remains a planned direction or workflow-specific capability rather than a universal claim. The public case study keeps that distinction visible instead of presenting every helper idea as finished infrastructure.
+Current helper behavior covers some context collection in the underlying workflows; richer prior-context search remains workflow-specific or planned unless separately validated for a surface.
 
 See [ARCHITECTURE.md](ARCHITECTURE.md#evidence-gathering-layer) for the evidence-gathering layer diagram.
+For a concrete synthetic packet shape, see [ARCHITECTURE.md](ARCHITECTURE.md#evidence-packets).
 
 ## The Durable Split
 

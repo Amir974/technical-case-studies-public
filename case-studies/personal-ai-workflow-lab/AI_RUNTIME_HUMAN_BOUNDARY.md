@@ -30,6 +30,20 @@ I remain responsible for goals, judgment, validation, approval, parking, closure
 
 This is the acceptance boundary. AI output can inform the decision, but it is not the decision.
 
+## State Mutation Protocol
+
+State changes follow an explicit protocol:
+
+1. The request names a specific item, queue, or investigation scope.
+2. The runtime builds or retrieves the evidence packet for that scope.
+3. AI can summarize the packet, name gaps, and suggest a bounded next action.
+4. The human chooses the lifecycle action and reason.
+5. The runtime validates that the selected action is allowed for the current state.
+6. The runtime records the state transition, audit note, and status update.
+7. Telegram and dashboard views reflect the saved state.
+
+If the packet is thin, source coverage is partial, or the requested transition is not allowed, the protocol should stop at review or investigation rather than turning an AI recommendation into a stored change.
+
 ## What The System Does Not Claim
 
 The system does not claim autonomous outreach, autonomous mutation, unreviewed action, automatic approval, replacement of human judgment, or measured performance gains without separate validation.
