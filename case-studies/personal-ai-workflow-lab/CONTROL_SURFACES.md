@@ -1,8 +1,17 @@
+Status: Private export draft / not public publication
+
 # Control Surfaces
 
 Telegram and the dashboard solve different product problems. Telegram is the fast control surface. The dashboard is the dense review surface.
 
 ![Hand-drawn comparison of Telegram as a fast command surface and dashboard as a deeper review surface over the same workflow.](assets/diagrams/04-telegram-vs-dashboard.png)
+
+## Surface Comparison
+
+| Surface | Best for | Input style | Output / review mode | Why it exists |
+| --- | --- | --- | --- | --- |
+| Telegram | Fast triage, status, one-item lookup, explicit decisions | Short commands | Compact response, next action, confirmation | Reduces friction and makes the workflow reachable from chat/mobile. |
+| Dashboard | Dense review, comparison, evidence inspection, lifecycle context | Filters, tables, detail views | Multi-item review, evidence coverage, decision prep | Gives enough room for slower judgment and comparison. |
 
 ## Why Chat Was The Right Place To Start
 

@@ -1,3 +1,5 @@
+Status: Private export draft / not public publication
+
 # Telegram-First Control Surface for a Personal AI Workflow Lab
 
 I built this as a practical control layer for personal AI-assisted workflows: fast enough to use from chat, structured enough to gather bounded evidence, and explicit enough that decisions stay mine.
@@ -5,6 +7,12 @@ I built this as a practical control layer for personal AI-assisted workflows: fa
 The useful pattern was not "chat runs everything." The useful pattern was a durable split: Telegram for fast control, a dashboard for dense review, helper layers for evidence gathering and enrichment, AI for synthesis over bounded packets, runtime for routing and state, and human review for approval, parking, closure, or follow-up.
 
 ![Hand-drawn diagram showing the durable split between fast command surface, deeper review surface, helper tooling, evidence packets, AI reasoning, human judgment, and bounded runtime updates.](assets/diagrams/01-durable-split.png)
+
+## Executive Summary
+
+- **Problem:** Repeated AI-assisted workflow reviews were hard to start, inspect, challenge, and close consistently.
+- **Solution:** I designed a Telegram-first control surface backed by dense dashboard review, evidence packets, helper tooling, AI-assisted synthesis, and human-owned decisions.
+- **What this demonstrates:** Product judgment around AI workflow boundaries, review-surface design, evidence discipline, and safe public communication of private implementation work.
 
 ## What I Was Trying To Solve
 
@@ -150,9 +158,26 @@ The current result is a maturing personal workflow lab, not a finished SaaS prod
 
 This public export is curated and sanitized, but it is backed by private implementation history. The public artifacts show architecture, synthetic examples, claim notes, and category-level implementation evidence without exposing private data, raw records, or environment-specific code.
 
-The public proof layer also includes a detailed sanitized activity ledger that shows implementation themes and iteration patterns without exposing raw PR history.
+For readers who want implementation proof, the sanitized activity ledger provides a public-safe view of implementation themes, iteration patterns, helper categories, and claim-support levels without exposing raw PR history.
 
 See [IMPLEMENTATION_EVIDENCE.md](IMPLEMENTATION_EVIDENCE.md) and [IMPLEMENTATION_ACTIVITY_LEDGER.md](IMPLEMENTATION_ACTIVITY_LEDGER.md) for the public-safe proof layer.
+
+## Recommended Reading Path
+
+- **5-minute review:** Start with this page, then skim the diagrams.
+- **Product / PM lens:** Read [CONTROL_SURFACES.md](CONTROL_SURFACES.md) and [WORKFLOW_EVOLUTION.md](WORKFLOW_EVOLUTION.md).
+- **Architecture lens:** Read [ARCHITECTURE.md](ARCHITECTURE.md) and [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md).
+- **Proof / credibility lens:** Read [IMPLEMENTATION_EVIDENCE.md](IMPLEMENTATION_EVIDENCE.md) and [IMPLEMENTATION_ACTIVITY_LEDGER.md](IMPLEMENTATION_ACTIVITY_LEDGER.md).
+- **Example-first lens:** Start with [SYNTHETIC_EXAMPLES.md](SYNTHETIC_EXAMPLES.md).
+
+## Visual Map
+
+The core diagrams are:
+
+- [Durable split](assets/diagrams/01-durable-split.png): fast control, dense review, evidence, AI reasoning, and human decision.
+- [Full workflow architecture](assets/diagrams/07-full-workflow-architecture.png): end-to-end workflow structure.
+- [Evidence gathering layer](assets/diagrams/08-evidence-gathering-layer.png): how helper layers prepare bounded packets.
+- [Human-in-the-loop boundary](assets/diagrams/06-human-in-the-loop-boundary.png): AI/runtime/human responsibility split.
 
 ## What To Read Next
 
