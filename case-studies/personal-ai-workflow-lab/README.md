@@ -1,5 +1,3 @@
-Status: Private export draft / not public publication
-
 # Telegram-First Control Surface for a Personal AI Workflow Lab
 
 I built this as a practical control layer for personal AI-assisted workflows: fast enough to use from chat, structured enough to gather bounded evidence, and explicit enough that decisions stay mine.

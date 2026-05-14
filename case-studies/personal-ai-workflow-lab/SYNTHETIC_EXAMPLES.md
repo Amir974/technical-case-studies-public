@@ -1,5 +1,3 @@
-Status: Private export draft / not public publication
-
 # Synthetic Examples
 
 The detailed examples now live in [synthetic-examples/](synthetic-examples/).
