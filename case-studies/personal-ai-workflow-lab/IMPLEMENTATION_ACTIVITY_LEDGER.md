@@ -139,6 +139,11 @@ This short trail is a readable sample of the progression behind the full ledger.
 
 ## Detailed sanitized activity ledger
 
+This optional deep-evidence table is not the primary reading path. It is available for readers who want to inspect row-level activity volume, component coverage, helper categories, and claim-support levels after using the summary tables and representative trail above.
+
+<details>
+<summary>Optional appendix: full sanitized activity table</summary>
+
 | Activity ID | Month | Source Area | PR Type | Public-Safe Theme | Sanitized Activity Summary | Component Supported | Helper Category | Claim Support | Evidence Basis | Public Exposure |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | FTS-ACT-001 | 2026-02 | Workflow orchestration repo | Infrastructure / process | Evidence packet generation | Improved repository discipline, review process, automation rules, or operating rules. | Evidence Packet Builder | Evidence-pack preparation | implemented | Sanitized private PR metadata reviewed by component and helper category; exact identifiers withheld. | Public-safe summary only; exact identifiers withheld. |
@@ -403,6 +408,8 @@ This short trail is a readable sample of the progression behind the full ledger.
 | HA-ACT-071 | 2026-04 | Automation/configuration repo | Bug fix | Diagnostic and maintenance tooling | Corrected behavior in this component where review, state, routing, or validation could otherwise become misleading. | Maintenance / Diagnostic Tools | Workflow maintenance helpers | implemented | Sanitized private PR metadata reviewed by component and helper category; exact identifiers withheld. | Public-safe summary only; exact identifiers withheld. |
 | HA-ACT-072 | 2026-04 | Automation/configuration repo | Test / validation | Observability investigation tooling | Added or tightened checks, dry-runs, validation gates, or review-safety assertions. | Observability Investigation Tooling | Diagnostic summaries | implemented | Sanitized private PR metadata plus validation classification; exact identifiers withheld. | Public-safe summary only; exact identifiers withheld. |
 | HA-ACT-073 | 2026-04 | Automation/configuration repo | Enhancement | Diagnostic and maintenance tooling | Improved helper tooling for inspection, dry-runs, repair, cleanup, or maintenance review. | Maintenance / Diagnostic Tools | Workflow maintenance helpers | implemented | Sanitized private PR metadata reviewed by component and helper category; exact identifiers withheld. | Public-safe summary only; exact identifiers withheld. |
+
+</details>
 
 ## Claim support notes
 
