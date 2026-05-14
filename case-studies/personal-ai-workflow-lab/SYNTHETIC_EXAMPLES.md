@@ -19,6 +19,14 @@ For the most coherent read, follow the same synthetic `ITEM-123` through:
 3. [Evidence packet shape](synthetic-examples/evidence-packet-shape.json) — bounded AI handoff contract.
 4. [External signal review](synthetic-examples/external-signal-review.md) — lifecycle decision and audit note.
 
+## How The Examples Map To The Architecture
+
+The examples are a concrete walkthrough of the architecture rather than separate demo material.
+
+The Telegram example shows the fast control surface and router entry point. The dashboard example shows the dense review surface. The helper flow shows evidence gathering, reconciliation, missing-fact checks, packet validation, and audit inspection. The packet JSON shows the bounded AI handoff contract. The external signal review example shows AI synthesis staying inside that packet while the human owns the lifecycle decision.
+
+Together, the examples make the architecture inspectable: each synthetic artifact maps to one stage of the loop from request, to evidence, to packet, to AI reasoning, to human decision, to saved state.
+
 ## Example Index
 
 - [Telegram command flow](synthetic-examples/telegram-command-flow.md): compact mobile-readable control for `ITEM-123`.
@@ -28,3 +36,7 @@ For the most coherent read, follow the same synthetic `ITEM-123` through:
 - [External signal review](synthetic-examples/external-signal-review.md): lifecycle decision flow using `/review`, `/details ITEM-123`, `/evaluate ITEM-123`, and explicit human decisions.
 - [Observability investigation](synthetic-examples/observability-investigation.md): bounded investigation with evidence, hypothesis, uncertainty, and next check.
 - [Control workflow review](synthetic-examples/control-workflow-review.md): generic state, intent, guard, AI explanation, and human approval boundary.
+
+## Next Step
+
+Next step in the core path: [IMPLEMENTATION_EVIDENCE.md](IMPLEMENTATION_EVIDENCE.md).

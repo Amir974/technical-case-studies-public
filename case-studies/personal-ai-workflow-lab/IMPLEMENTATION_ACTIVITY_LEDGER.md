@@ -16,11 +16,15 @@ This ledger is not meant to be read line by line. It is a scan-friendly appendix
 - personal, account-adjacent, company, contact, profile, and external-signal source data
 - credential, access, security, and environment-specific details
 
-## How to read this as a reviewer
+## How To Read This Ledger
+
+Read this ledger as supporting evidence for the case-study claims, not as a complete implementation narrative.
 
 - Product managers: look for problem evolution, tradeoffs, surfaces, lifecycle decisions, and how the work moved from a single control loop into reusable workflow patterns.
 - Technical readers / architects / developers: look for implementation themes, packet contracts, state and audit boundaries, helper tooling, validation gates, and how AI handoffs were bounded.
 - Recruiters / hiring reviewers: look for sustained ownership, communication clarity, technical fluency, iteration across visible and hidden layers, and responsible public/private boundaries.
+
+The summary tables are the fastest way to understand scope. The representative trail gives a readable progression. The detailed rows are appendix material for readers who want to inspect activity volume, component coverage, helper categories, and claim-support levels.
 
 ## Component map
 
@@ -415,3 +419,7 @@ This short trail is a readable sample of the progression behind the full ledger.
 - This is not a raw pull-request list.
 - This is public-safe evidence of implementation activity, not a complete implementation disclosure.
 - Exact traceability remains private and should be reviewed only under appropriate privacy controls.
+
+## Next Step
+
+Next step in the core path: [PUBLIC_ARTIFACT_INDEX.md](PUBLIC_ARTIFACT_INDEX.md).

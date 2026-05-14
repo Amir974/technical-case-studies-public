@@ -60,3 +60,7 @@ The synthetic examples are not copied from private records. They preserve workfl
 A deeper review can compare the category-level claims in this page with private repository history under appropriate access and privacy controls.
 
 That review should stay at the same discipline level used here: verify categories of implementation work, validate that public claims are supported, and avoid copying raw private evidence into public artifacts.
+
+## Next Step
+
+Next step in the core path: [IMPLEMENTATION_ACTIVITY_LEDGER.md](IMPLEMENTATION_ACTIVITY_LEDGER.md).

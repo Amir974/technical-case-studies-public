@@ -51,6 +51,14 @@ The dashboard did not replace Telegram. It took the work that chat was never mea
 
 **Design decision:** Telegram should stay compact and action-oriented. The dashboard should make evidence and comparison visible before a decision.
 
+## Product Prioritization Decision
+
+The prioritization decision was to keep Telegram narrow and invest heavier review affordances in the dashboard.
+
+That meant chat carried status, one-item lookup, evaluation requests, and explicit lifecycle commands. The dashboard carried comparison, evidence coverage, missing-fact review, history, and decision preparation. This avoided turning Telegram into a dense reporting surface and avoided making the dashboard the only way to move a simple item forward.
+
+The product tradeoff was intentional: optimize the first surface for reachability, then add depth only where the workflow proved that review density mattered.
+
 ## What Belongs In The Dashboard
 
 The dashboard is the right surface for comparison, prioritization, lifecycle review, evidence inspection, denser AI evaluation review, missing-fact scans, history availability, and decision preparation.
@@ -75,3 +83,7 @@ Telegram or dashboard
 Telegram is best when I already know the next action or want one compact answer. The dashboard is best when I need to compare, inspect, and prepare. Final decisions remain human-owned in both places.
 
 Supporting tools keep both surfaces from becoming shallow wrappers around AI. They handle intake checks, state reconciliation, packet validation, audit inspection, and diagnostics underneath the visible flow, so Telegram can stay compact and the dashboard can stay focused on review rather than maintenance detail.
+
+## Next Step
+
+Next step in the core path: [SYNTHETIC_EXAMPLES.md](SYNTHETIC_EXAMPLES.md).

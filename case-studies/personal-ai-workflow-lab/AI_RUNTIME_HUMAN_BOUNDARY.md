@@ -43,3 +43,7 @@ The boundary matters because AI is strongest as a reasoning layer and weakest wh
 By separating AI, helper tools, runtime, and human roles, the workflow becomes easier to inspect. If AI overreaches, the packet and allowed actions show the limit. If evidence is missing, the response should name the gap. If state changes, the audit trail should show the human decision. If the workflow needs a new action, that action can be designed explicitly.
 
 The result is not a claim of autonomy. It is a review loop with better structure.
+
+## Next Step
+
+Next step in the core path: [CONTROL_SURFACES.md](CONTROL_SURFACES.md).
