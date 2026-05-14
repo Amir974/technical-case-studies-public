@@ -10,6 +10,12 @@ Debugging-layer architecture: the underlying automation system produces events a
 
 The diagram shows the debugging layer, not the full automation/control system; the underlying system is represented only as the source of events and evidence.
 
+## Where This Fits In The Series
+
+This is the observability and diagnosis layer of the series. It shows how a complex automation system can produce bounded evidence for AI-assisted explanation while keeping actuation and final decisions outside the AI boundary.
+
+In the broader pattern, this case study proves the diagnostic side: exact-window evidence, visible gaps, confidence-aware explanation, and human operator review.
+
 ## Start here
 
 Start with [Building an AI-Assisted Debugging Layer for Complex Automation](PUBLIC_CASE_STUDY_DRAFT.md).

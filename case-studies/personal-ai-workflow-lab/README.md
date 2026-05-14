@@ -12,6 +12,12 @@ The useful pattern was not "chat runs everything." The useful pattern was a dura
 - **Solution:** I designed a Telegram-first control surface backed by dense dashboard review, evidence packets, helper tooling, AI-assisted synthesis, and human-owned decisions.
 - **What this demonstrates:** Product judgment around AI workflow boundaries, review-surface design, evidence discipline, and safe public communication of private implementation work.
 
+## Where This Fits In The Series
+
+This is the workflow platform and control-surface layer of the series. It shows how several bounded AI-assisted workflows can share a durable operating pattern: fast command surfaces for movement, dense review surfaces for judgment, helper layers for evidence gathering, AI for synthesis, and human-owned state transitions.
+
+It is not the external-signal triage case study itself. It explains the reusable control model that can support workflows like observability investigation and external signal review.
+
 ## What I Was Trying To Solve
 
 I was interested in AI assistants as operating layers for real personal workflows, not only as long chat threads. The question was whether an assistant could help me run work I already cared about while preserving the parts that should not be delegated: goals, judgment, validation, and acceptance.
