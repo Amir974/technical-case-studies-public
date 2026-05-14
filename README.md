@@ -6,6 +6,12 @@ The material here is public-facing, selective, and privacy-reviewed. Private sou
 
 Start with the case study that matches your review goal: observability/debugging, AI workflow orchestration, or decision support for external signal review.
 
+## Quick Read For Busy Reviewers
+
+- These case studies show how I design AI-assisted systems around bounded evidence, human judgment, and auditable state changes.
+- The series covers three distinct problems: explaining system behavior, designing workflow control surfaces, and preserving decision quality in triage.
+- The artifacts are public-safe and synthetic where needed; they demonstrate product and systems thinking, not a supported product.
+
 ## Series Thesis
 
 These case studies explore one product pattern across different layers: AI is most useful in complex workflows when it reasons over bounded evidence, humans own decisions, and runtime systems record state changes explicitly.
@@ -20,17 +26,7 @@ The shared terms are intentional. Each case study uses evidence packets, AI asse
 
 ## How The Three Case Studies Fit Together
 
-```mermaid
-flowchart LR
-    thesis["Shared thesis: bounded evidence + human decision + audited state"]
-    obs["Observability / diagnosis<br/>AI-assisted debugging"]
-    lab["Workflow platform / control surfaces<br/>Personal AI Workflow Lab"]
-    signal["Decision support / triage<br/>External Signal Review"]
-
-    thesis --> obs
-    thesis --> lab
-    thesis --> signal
-```
+![Hand-drawn puzzle-piece diagram showing three public case studies as three product questions connected by bounded evidence, human judgment, and audited state.](assets/diagrams/three-case-studies-one-thesis.png)
 
 ## What This Repository Contains
 

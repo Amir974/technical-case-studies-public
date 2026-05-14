@@ -47,6 +47,17 @@ The runtime saves the state update and audit note
 
 The important part is the handoff discipline. AI receives a bounded packet. Missing facts stay visible. Ambiguous evidence does not mutate lifecycle state. The runtime changes state only after I choose an allowed action.
 
+## Before / After: Why The Packet Matters
+
+Before the workflow, open items could look similar even when they were in very different states: never reviewed, waiting on missing facts, already reviewed but parked, or ready for action. The risk was acting on a vague impression instead of knowing what was known, what was missing, and what decision was actually allowed.
+
+After the workflow, each item carried a bounded evidence packet: known facts, missing facts, source coverage, prior state, allowed actions, AI assessment, human decision, and an audit note. A review could move quickly without hiding uncertainty.
+
+Before: noisy signal -> vague impression -> inconsistent follow-up
+After: noisy signal -> facts + gaps -> bounded packet -> AI assessment -> human decision -> audited state
+
+For the concrete public-safe shape, see SYNTHETIC_PACKET.md and synthetic-examples/signal_packet.synthetic.json.
+
 ## The Workflow I Built
 
 The workflow separates seven jobs:

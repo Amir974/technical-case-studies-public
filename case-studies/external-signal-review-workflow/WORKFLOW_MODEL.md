@@ -4,28 +4,7 @@ This model describes the public-safe shape of the External Signal Review Workflo
 
 ## End-To-End Flow
 
-```mermaid
-flowchart TD
-    subgraph ingestion["Ingestion"]
-        A[Noisy input / External signal] --> B[Fact extraction]
-        B --> C[Missing facts]
-    end
-
-    subgraph ai_support["AI Decision Support - Bounded"]
-        D[Evidence packet] --> E[AI assessment]
-    end
-
-    subgraph human_loop["Human in the Loop"]
-        F[Ranked review queue] --> G[Compact details]
-        G --> H[Human decision]
-    end
-
-    I[Stored state and audit]
-
-    C --> D
-    E --> F
-    H --> I
-```
+![Hand-drawn workflow model showing noisy external signals becoming fact extraction, missing facts, a bounded evidence packet, AI assessment, human decision, and audited state update.](assets/diagrams/04-workflow-model.png)
 
 ## Model Stages
 
