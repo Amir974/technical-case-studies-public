@@ -1,3 +1,5 @@
+Status: Private export draft / not public publication
+
 # Synthetic Examples
 
 The detailed examples now live in [synthetic-examples/](synthetic-examples/).
@@ -9,6 +11,15 @@ The first five examples share one coherent `ITEM-123` walkthrough. Read them in 
 For the helper and maintenance layer behind these examples, see [SUPPORTING_TOOLS.md](SUPPORTING_TOOLS.md).
 
 ![Hand-drawn evidence packet showing context, facts, assumptions, gaps, sources, and clarification needs flowing into AI reasoning, human review, and runtime or workflow update.](assets/diagrams/05-evidence-packet-anatomy.png)
+
+## Start With This Walkthrough
+
+For the most coherent read, follow the same synthetic `ITEM-123` through:
+
+1. [Telegram command flow](synthetic-examples/telegram-command-flow.md) — fast control and request entry.
+2. [Dashboard review flow](synthetic-examples/dashboard-review-flow.md) — dense review and comparison.
+3. [Evidence packet shape](synthetic-examples/evidence-packet-shape.json) — bounded AI handoff contract.
+4. [External signal review](synthetic-examples/external-signal-review.md) — lifecycle decision and audit note.
 
 ## Example Index
 
