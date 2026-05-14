@@ -1,0 +1,79 @@
+{
+  "sample_type": "synthetic_public_safe_example",
+  "request": {
+    "command": "/evaluate ITEM-123",
+    "intent": "evaluate_item_for_human_review",
+    "requested_output": "concise recommendation with gaps and allowed next actions"
+  },
+  "item_ref": {
+    "id": "ITEM-123",
+    "display_label": "Synthetic review item",
+    "current_state": "needs_evaluation"
+  },
+  "workflow": {
+    "name": "external_signal_review",
+    "review_goal": "decide whether the item should move forward, be parked, or be closed"
+  },
+  "walkthrough_links": {
+    "fast_control": "telegram-command-flow.md",
+    "dense_review": "dashboard-review-flow.md",
+    "lifecycle_decision": "external-signal-review.md"
+  },
+  "evidence_gathering": {
+    "source_messages": "checked",
+    "stored_item_state": "present",
+    "prior_decisions": "present",
+    "source_reconciliation": "partial",
+    "manual_or_browser_assist": "present",
+    "diagnostic_helper": "not_needed_for_this_packet",
+    "local_context": "stored_state_only",
+    "local_context_search": "not_claimed_for_this_packet"
+  },
+  "source_coverage": {
+    "summary": "present",
+    "prior_state": "present",
+    "scope": "missing",
+    "timeline": "missing",
+    "decision_history": "available"
+  },
+  "known_facts": [
+    "The item category appears relevant to the current review goal.",
+    "A concise public summary is available.",
+    "The item has not been approved before.",
+    "A manual assist note is present for one source that was not fully automated."
+  ],
+  "missing_facts": [
+    "Ownership scope is unclear.",
+    "Timeline is unclear.",
+    "Decision urgency is unknown.",
+    "Manual assist evidence needs human review before approval."
+  ],
+  "prior_state": {
+    "lifecycle_state": "needs_evaluation",
+    "last_human_decision": "none_in_packet"
+  },
+  "ai_task": {
+    "task": "evaluate the packet for review readiness",
+    "must_include": [
+      "assessment",
+      "risks_or_gaps",
+      "confidence_note",
+      "recommended_next_action"
+    ],
+    "must_not_do": [
+      "approve automatically",
+      "mutate state",
+      "perform outreach"
+    ]
+  },
+  "allowed_actions": [
+    "/approve ITEM-123",
+    "/park ITEM-123",
+    "/close ITEM-123"
+  ],
+  "audit_policy": {
+    "state_change_requires_human_decision": true,
+    "record_ai_evaluation_as_advisory": true,
+    "record_missing_facts": true
+  }
+}

@@ -23,3 +23,7 @@ Start with the first case study: [Building an AI-Assisted Debugging Layer for Co
 ## Current Case Study
 
 - [Building an AI-Assisted Debugging Layer for Complex Automation](case-studies/ai-observability-home-automation/README.md): a case study about bounded evidence, observability, non-actuating AI, and human review in a complex event-driven automation system.
+
+## Personal AI Workflow Lab
+
+- [Personal AI Workflow Lab](case-studies/personal-ai-workflow-lab/README.md) — Telegram-first AI workflow lab showing bounded evidence packets, fast command surfaces, dense review surfaces, human-owned decisions, and sanitized implementation evidence.

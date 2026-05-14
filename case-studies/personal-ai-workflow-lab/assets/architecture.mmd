@@ -1,0 +1,25 @@
+flowchart LR
+    human[Human Operator] --> telegram[Telegram Control Surface]
+    human --> dashboard[Dashboard Review Surface]
+
+    telegram --> router[Command Router]
+    dashboard --> router
+    router --> orchestrator[Workflow Orchestrator]
+    orchestrator --> dashboard
+
+    orchestrator --> external[External Signal Review]
+    orchestrator --> observability[Observability Investigation]
+    orchestrator --> control[Control Workflow Review]
+
+    external --> gatherers[Evidence Gatherers / Enrichment Helpers]
+    observability --> gatherers
+    control --> gatherers
+
+    gatherers --> packet[Evidence Packet Builder]
+    packet --> ai[AI Reasoning / Evaluation]
+    ai --> review[Human Review / Approval]
+    dashboard --> review
+    review --> audit[Audit Log / State Store]
+    audit --> status[Status / Queue Updates]
+    status --> telegram
+    status --> dashboard
