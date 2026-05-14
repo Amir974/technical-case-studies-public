@@ -119,3 +119,7 @@ The same architecture supports multiple workflow modules:
 - **Control Workflow Review:** review generic control state, intent, guard behavior, and next checks while preserving the same decision boundary.
 
 ![Hand-drawn diagram showing external signal review, observability investigation, and control workflow review using the same pattern of intake, evidence packet, AI reasoning, human decision, and bounded update.](assets/diagrams/03-three-workflows-one-pattern.png)
+
+## Next Step
+
+Next step in the core path: [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md).

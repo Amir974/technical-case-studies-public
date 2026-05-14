@@ -63,6 +63,21 @@ Those commands map well to a phone. They are quick, action-oriented, and easy to
 
 Telegram also kept the first version honest. It was a control surface, not the whole product.
 
+## Quick Example: One Review Loop
+
+A compact version of the pattern looks like this:
+
+```text
+User -> /evaluate ITEM-123
+Router -> External Signal Review workflow
+Evidence layer -> source message, stored state, prior decisions, missing fact flagged
+AI -> summarizes fit, gaps, and recommended next check from the bounded packet
+Human -> /park ITEM-123 reason:"awaiting missing fact"
+Runtime -> state saved, audit note recorded, confirmation returned
+```
+
+The important part is not the command syntax. It is the handoff discipline: the AI receives a bounded packet, the missing fact stays visible, and the state change happens only after a human decision.
+
 ## Why The Dashboard Became Necessary
 
 Chat is weak for dense review.
@@ -125,6 +140,14 @@ The public-safe verticals are:
 **Control Workflow Review:** generic control state, intent, guard behavior, and next checks can be reviewed without exposing private environment details.
 
 The point is not that all workflows are identical. The point is that they can share a product pattern: bounded evidence, AI-assisted reasoning, human acceptance, and audited state.
+
+## What This Pattern Generalizes To
+
+The pattern generalizes to workflows where the hard part is not one isolated answer, but a repeated review loop with state, evidence, uncertainty, and an explicit decision.
+
+Good candidates have a queue or item, a bounded question, source material that can be checked, a small set of allowed next actions, and a reason to preserve an audit trail. Poor candidates are open-ended tasks where the assistant would need to invent goals, act without review, or treat missing evidence as permission to guess.
+
+The reusable shape is therefore product-level rather than domain-specific: fast control, dense review when needed, packet-backed AI reasoning, visible gaps, human-owned state transitions, and public-safe communication of what the system does and does not claim.
 
 ## Where AI Fits
 
@@ -196,3 +219,7 @@ The core diagrams are:
 - **Forthcoming/planned:** External Signal Review.
 - **Forthcoming/planned:** Control Workflow Review.
 - **Forthcoming/planned:** AI Workflow Operations.
+
+## Next Step
+
+Next step in the core path: [ARCHITECTURE.md](ARCHITECTURE.md).
