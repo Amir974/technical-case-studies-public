@@ -50,7 +50,7 @@ Start with [README.md](README.md). It is now the main reader experience and expl
 | [08-evidence-gathering-layer.png](assets/diagrams/08-evidence-gathering-layer.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Reviewed public case-study image. |
 | [09-helper-and-maintenance-tools.png](assets/diagrams/09-helper-and-maintenance-tools.png) | [SUPPORTING_TOOLS.md](SUPPORTING_TOOLS.md) | Reviewed public case-study image. |
 
-The Mermaid skeleton is [assets/architecture.mmd](assets/architecture.mmd). The designed visual specs are in [assets/diagram_specs.md](assets/diagram_specs.md). These images remain part of the public case-study artifact until a separate publication review approves export.
+The Mermaid skeleton is [assets/architecture.mmd](assets/architecture.mmd). The designed visual specs are in [assets/diagram_specs.md](assets/diagram_specs.md). These images are included as reviewed public case-study assets.
 
 ## Optional Proof And Safety Appendix
 
