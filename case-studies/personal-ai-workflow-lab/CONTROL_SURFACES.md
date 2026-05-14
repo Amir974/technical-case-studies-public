@@ -1,5 +1,3 @@
-Status: Private export draft / not public publication
-
 # Control Surfaces
 
 Telegram and the dashboard solve different product problems. Telegram is the fast control surface. The dashboard is the dense review surface.
