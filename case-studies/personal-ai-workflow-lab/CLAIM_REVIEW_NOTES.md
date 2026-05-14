@@ -26,7 +26,7 @@ This note summarizes claim discipline for the published case-study artifact.
 | The public repo is intentionally curated and sanitized rather than a full source disclosure. | private draft; case-study playbook; private proof ledger | Framed as a safety and privacy decision, not as a completeness claim. |
 | Implementation evidence is summarized by theme rather than raw private change references. | private proof ledger | Keeps proof useful without exposing exact private change history. |
 | Exact pull request data remains private. | private proof ledger | Public files avoid exact pull request numbers, titles, links, commit identifiers, issue references, and branch names. |
-| The draft is shaped for product, technical, and hiring reviewers without becoming a resume pitch. | existing public case-study structure; private draft | Added through professional demonstration language focused on product judgment and architecture literacy. |
+| The artifact is shaped for product, technical, and hiring reviewers without becoming a resume pitch. | existing public case-study structure; private draft | Added through professional demonstration language focused on product judgment and architecture literacy. |
 | Manual or browser-assisted collection can be safer where full automation is brittle. | project-doc synthesis | Kept generic; no source names. |
 | Some prior-state enrichment exists, while broader prior-context search is workflow-specific or planned unless separately validated. | project-doc synthesis; future/planned/softened | Softened to avoid a universal implementation claim. |
 | AI synthesizes, explains, evaluates, names gaps, and suggests next checks over bounded packets. | private draft; project-doc synthesis | Kept as responsibility framing. |
@@ -41,7 +41,7 @@ This note summarizes claim discipline for the published case-study artifact.
 - Converted `PUBLIC_CASE_STUDY.md` from a duplicate main article into companion design notes.
 - Softened any broad "platform" language into "maturing personal workflow lab" or "platform pattern."
 - Avoided exact claims about duration, adoption, time saved, reliability, accuracy, production readiness, or automation success.
-- Avoided claiming universal local/prior-context search. The draft now distinguishes stored prior state from richer planned or workflow-specific search.
+- Avoided claiming universal local/prior-context search. The artifact distinguishes stored prior state from richer planned or workflow-specific search.
 - Softened helper capability language so support tools are described as workflow-specific, partial, or directional where implementation evidence is not universal.
 - Added implementation-credibility language at category level while avoiding raw private change history.
 - Avoided naming private source systems in public-facing prose.
@@ -96,9 +96,8 @@ PR type classification is used as evidence of product and engineering maturity: 
 - Do not claim autonomous source gathering, autonomous enrichment, or unreviewed state mutation.
 - Keep public wording tied to the sanitized ledger's component and helper support levels.
 
-## Open Items Requiring User Review
 
-- Final naming for the related forthcoming verticals.
-- Whether the public version should keep `PUBLIC_CASE_STUDY.md` as companion notes or remove it before export.
-- Whether any source-system names should be approved for public use later; the current pass keeps them generic.
-- Whether Diagram 08 should be rendered as a standalone visual or folded into Diagram 07 during final design.
+## Future Review Items
+
+- Future iterations may refine the naming of related forthcoming verticals as those case studies are published.
+- Future iterations may approve additional public source-system names, but this artifact intentionally keeps labels generic.

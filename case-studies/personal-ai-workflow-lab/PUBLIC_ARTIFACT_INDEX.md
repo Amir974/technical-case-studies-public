@@ -2,7 +2,7 @@
 
 [Main case study](README.md) | [Companion notes](PUBLIC_CASE_STUDY.md) | [Architecture](ARCHITECTURE.md) | [Control surfaces](CONTROL_SURFACES.md) | [Supporting tools](SUPPORTING_TOOLS.md) | [Implementation evidence](IMPLEMENTATION_EVIDENCE.md) | [Activity ledger](IMPLEMENTATION_ACTIVITY_LEDGER.md) | [Boundary](AI_RUNTIME_HUMAN_BOUNDARY.md) | [Workflow evolution](WORKFLOW_EVOLUTION.md)
 
-Public-safe artifacts in this public artifact include the main narrative, companion notes, support pages, synthetic examples, diagram assets, visual specs, and publication notes.
+This public case-study artifact includes the main narrative, companion notes, support pages, synthetic examples, diagram assets, visual specs, and publication notes.
 
 ## Start Here
 
@@ -40,21 +40,21 @@ Start with [README.md](README.md). It is now the main reader experience and expl
 
 | Visual | Placement | Status |
 | --- | --- | --- |
-| [01-durable-split.png](assets/diagrams/01-durable-split.png) | [README.md](README.md) | Integrated draft image. |
-| [02-how-a-request-flows.png](assets/diagrams/02-how-a-request-flows.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Integrated draft image. |
-| [03-three-workflows-one-pattern.png](assets/diagrams/03-three-workflows-one-pattern.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Integrated draft image. |
-| [04-telegram-vs-dashboard.png](assets/diagrams/04-telegram-vs-dashboard.png) | [CONTROL_SURFACES.md](CONTROL_SURFACES.md) | Integrated draft image. |
-| [05-evidence-packet-anatomy.png](assets/diagrams/05-evidence-packet-anatomy.png) | [SYNTHETIC_EXAMPLES.md](SYNTHETIC_EXAMPLES.md) | Integrated draft image. |
-| [06-human-in-the-loop-boundary.png](assets/diagrams/06-human-in-the-loop-boundary.png) | [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md) | Integrated draft image. |
-| [07-full-workflow-architecture.png](assets/diagrams/07-full-workflow-architecture.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Integrated draft image. |
-| [08-evidence-gathering-layer.png](assets/diagrams/08-evidence-gathering-layer.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Integrated draft image. |
-| [09-helper-and-maintenance-tools.png](assets/diagrams/09-helper-and-maintenance-tools.png) | [SUPPORTING_TOOLS.md](SUPPORTING_TOOLS.md) | Integrated draft image. |
+| [01-durable-split.png](assets/diagrams/01-durable-split.png) | [README.md](README.md) | Reviewed public case-study image. |
+| [02-how-a-request-flows.png](assets/diagrams/02-how-a-request-flows.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Reviewed public case-study image. |
+| [03-three-workflows-one-pattern.png](assets/diagrams/03-three-workflows-one-pattern.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Reviewed public case-study image. |
+| [04-telegram-vs-dashboard.png](assets/diagrams/04-telegram-vs-dashboard.png) | [CONTROL_SURFACES.md](CONTROL_SURFACES.md) | Reviewed public case-study image. |
+| [05-evidence-packet-anatomy.png](assets/diagrams/05-evidence-packet-anatomy.png) | [SYNTHETIC_EXAMPLES.md](SYNTHETIC_EXAMPLES.md) | Reviewed public case-study image. |
+| [06-human-in-the-loop-boundary.png](assets/diagrams/06-human-in-the-loop-boundary.png) | [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md) | Reviewed public case-study image. |
+| [07-full-workflow-architecture.png](assets/diagrams/07-full-workflow-architecture.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Reviewed public case-study image. |
+| [08-evidence-gathering-layer.png](assets/diagrams/08-evidence-gathering-layer.png) | [ARCHITECTURE.md](ARCHITECTURE.md) | Reviewed public case-study image. |
+| [09-helper-and-maintenance-tools.png](assets/diagrams/09-helper-and-maintenance-tools.png) | [SUPPORTING_TOOLS.md](SUPPORTING_TOOLS.md) | Reviewed public case-study image. |
 
-The Mermaid skeleton is [assets/architecture.mmd](assets/architecture.mmd). The designed visual specs are in [assets/diagram_specs.md](assets/diagram_specs.md). These images remain part of the curated public artifact until a separate publication review approves export.
+The Mermaid skeleton is [assets/architecture.mmd](assets/architecture.mmd). The designed visual specs are in [assets/diagram_specs.md](assets/diagram_specs.md). These images are included as reviewed public case-study assets.
 
 ## Publication And Safety Notes
 
-Use [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md) before any public export. The draft uses synthetic and public-safe composite examples, qualitative claims, generic labels, and explicit human-review boundaries.
+See [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md) for publication stance and safety notes. This artifact uses synthetic and public-safe composite examples, qualitative claims, generic labels, and explicit human-review boundaries.
 
 Private working material exists outside this public case-study artifact to support internal review. It is not part of the public artifact map and should not be exported. Private proof ledgers remain private working material, not public artifacts.
 
