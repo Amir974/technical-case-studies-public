@@ -6,16 +6,16 @@ This model describes the public-safe shape of the External Signal Review Workflo
 
 ```mermaid
 flowchart TD
-    subgraph Ingestion
+    subgraph ingestion["Ingestion"]
         A[Noisy input / External signal] --> B[Fact extraction]
         B --> C[Missing facts]
     end
 
-    subgraph AI Decision Support (Bounded)
+    subgraph ai_support["AI Decision Support - Bounded"]
         D[Evidence packet] --> E[AI assessment]
     end
 
-    subgraph Human-in-the-Loop
+    subgraph human_loop["Human in the Loop"]
         F[Ranked review queue] --> G[Compact details]
         G --> H[Human decision]
     end

@@ -4,7 +4,7 @@ This repository contains sanitized technical case studies and selected reference
 
 The material here is public-facing, selective, and privacy-reviewed. Private source repositories, operational configuration, real logs, personal data, and environment-specific details are intentionally excluded.
 
-Start with the case study that matches your review goal: observability/debugging or AI workflow orchestration.
+Start with the case study that matches your review goal: observability/debugging, AI workflow orchestration, or decision support for external signal review.
 
 ## Series Thesis
 
@@ -16,7 +16,21 @@ The shared terms are intentional. Each case study uses evidence packets, AI asse
 |---|---|---|---|
 | [Building an AI-Assisted Debugging Layer for Complex Automation](case-studies/ai-observability-home-automation/README.md) | Observability / diagnosis | Published | Complex system behavior can be explained from bounded evidence without letting AI actuate. |
 | [Personal AI Workflow Lab](case-studies/personal-ai-workflow-lab/README.md) | Workflow platform / control surfaces | Published | Multiple bounded AI-assisted workflows can be operated through fast command surfaces and dense review surfaces. |
-| External Signal Review Workflow | Product decision support / triage | Forthcoming export candidate | Noisy external inputs can become structured evidence packets, AI assessment, human decisions, and audited state updates. |
+| [External Signal Review Workflow](case-studies/external-signal-review-workflow/README.md) | Product decision support / triage | Published | Noisy external inputs can become structured evidence packets, AI assessment, human decisions, and audited state updates. |
+
+## How The Three Case Studies Fit Together
+
+```mermaid
+flowchart LR
+    thesis["Shared thesis: bounded evidence + human decision + audited state"]
+    obs["Observability / diagnosis<br/>AI-assisted debugging"]
+    lab["Workflow platform / control surfaces<br/>Personal AI Workflow Lab"]
+    signal["Decision support / triage<br/>External Signal Review"]
+
+    thesis --> obs
+    thesis --> lab
+    thesis --> signal
+```
 
 ## What This Repository Contains
 
@@ -30,10 +44,12 @@ The shared terms are intentional. Each case study uses evidence packets, AI asse
 - A supported product.
 - A source-code mirror of private systems.
 - A deployment guide.
-- A place for raw logs, transcripts, operational records, private identifiers, or environment-specific configuration.
+- A place for unsanitized operational artifacts, private identifiers, or environment-specific configuration.
 
 ## Case Studies
 
 - [Building an AI-Assisted Debugging Layer for Complex Automation](case-studies/ai-observability-home-automation/README.md): a case study about bounded evidence, observability, non-actuating AI, and human review in a complex event-driven automation system.
 
 - [Personal AI Workflow Lab](case-studies/personal-ai-workflow-lab/README.md) — Telegram-first AI workflow lab showing bounded evidence packets, fast command surfaces, dense review surfaces, human-owned decisions, and sanitized implementation evidence.
+
+- [External Signal Review Workflow](case-studies/external-signal-review-workflow/README.md): product decision support workflow showing external signal intake, bounded evidence packets, AI assessment, human triage, and audited state updates.
