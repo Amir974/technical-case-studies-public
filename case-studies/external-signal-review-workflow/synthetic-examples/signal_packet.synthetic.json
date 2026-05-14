@@ -1,0 +1,60 @@
+{
+  "signal_id": "ITEM-123",
+  "signal_summary": "A potentially relevant external signal arrived from a noisy source and needs review before any action.",
+  "known_facts": {
+    "domain": "target area under review",
+    "scope": "possibly relevant, not confirmed",
+    "practical_viability": "partially supported",
+    "prior_history_status": "checked, no blocking decision visible"
+  },
+  "missing_facts": [
+    "full source description",
+    "confirmation that related signal is not a duplicate",
+    "practical constraints",
+    "required next-step details"
+  ],
+  "source_coverage": {
+    "source_notification": "available",
+    "full_source": "missing",
+    "stored_state": "available",
+    "prior_history": "partial",
+    "related_signal_check": "partial"
+  },
+  "ambiguity": {
+    "has_ambiguity": true,
+    "flags": [
+      "possible_duplicate",
+      "partial_source_coverage",
+      "practical_constraint_unknown"
+    ],
+    "clarification_id": "CLAR-001"
+  },
+  "assessment_request": {
+    "task": "Assess whether ITEM-123 should be approved, parked, closed, or clarified.",
+    "constraints": [
+      "use only packet evidence",
+      "name missing facts",
+      "do not mutate runtime state"
+    ]
+  },
+  "allowed_decisions": [
+    "approve",
+    "park",
+    "clarify",
+    "close",
+    "sync"
+  ],
+  "mutation_preview": {
+    "selected_action": "park",
+    "before_state": "needs_decision",
+    "after_state": "parked",
+    "requires_human_decision": true,
+    "dry_run_plan_applied": false
+  },
+  "audit_fields": {
+    "decision_source": "human",
+    "packet_reference": "ITEM-123",
+    "assessment_reference": "assessment.synthetic.md",
+    "timestamp_category": "decision-recorded"
+  }
+}
