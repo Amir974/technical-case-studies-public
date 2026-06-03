@@ -81,45 +81,9 @@ The first goal was to prove provider-policy, accounting, and source-grounded pac
 
 ## Diagram / Architecture
 
-Diagram source: [assets/search-provider-strategy.mmd](assets/search-provider-strategy.mmd).
+![Hand-drawn architecture diagram showing search as an evidence tool: evidence need, provider policy with Brave and Tavily as peer providers, accounted evidence, bounded review, and human-owned decisions.](assets/diagrams/05-search-as-evidence.png)
 
-```mermaid
-flowchart LR
-    title["SEARCH PROVIDER POLICY"]
-    subtitle["Search helps the agent gather evidence. It does not decide."]
-
-    external["External Signal Review"]
-    gap["Evidence Gap Check"]
-    policy["Provider Policy Layer"]
-    brave["Brave<br/>peer provider"]
-    tavily["Tavily<br/>peer provider"]
-    normalized["Normalized Evidence"]
-    accounting["Cache + Usage Accounting"]
-    packet["Evidence Packet"]
-    ai["AI-Assisted Review"]
-    human["Human Decision"]
-    audit["Audited State / Reporting"]
-
-    config["Configuration Examples<br/>primary provider<br/>fallback on weak evidence<br/>compare<br/>weighted split"]
-    principle["Better evidence. Clear accounting. Human-owned decisions."]
-
-    title --> subtitle
-    subtitle --> external
-    external --> gap
-    gap --> policy
-    policy --> brave
-    policy --> tavily
-    brave --> normalized
-    tavily --> normalized
-    normalized --> accounting
-    accounting --> packet
-    packet --> ai
-    ai --> human
-    human --> audit
-    config -.-> policy
-    principle -.-> accounting
-    principle -.-> human
-```
+The provider-policy layer keeps retrieval separate from evaluation: search gathers attributed evidence, accounting records usage, the packet constrains reasoning, and the human decision remains final.
 
 ## Tradeoffs
 

@@ -24,7 +24,7 @@
 | [synthetic-examples/signal_packet.synthetic.json](synthetic-examples/signal_packet.synthetic.json) | Compact packet shape. |
 | [synthetic-examples/assessment.synthetic.md](synthetic-examples/assessment.synthetic.md) | Synthetic AI assessment. |
 | [synthetic-examples/commands.synthetic.md](synthetic-examples/commands.synthetic.md) | Generic command examples. |
-| [assets/search-provider-strategy.mmd](assets/search-provider-strategy.mmd) | Mermaid source for the search-provider policy diagram. |
+| [assets/diagrams/05-search-as-evidence.png](assets/diagrams/05-search-as-evidence.png) | Styled search-as-evidence diagram for provider-policy retrieval, usage accounting, and bounded review. |
 
 ## Private Review / Support Files
 
