@@ -114,6 +114,7 @@ Current helper behavior covers some context collection in the underlying workflo
 
 See [ARCHITECTURE.md](ARCHITECTURE.md#evidence-gathering-layer) for the evidence-gathering layer diagram.
 For a concrete synthetic packet shape, see [ARCHITECTURE.md](ARCHITECTURE.md#evidence-packets).
+For a focused related pattern, see [Search Provider Strategy: Evidence Robustness and Resource-Aware Retrieval](../external-signal-review-workflow/SEARCH_PROVIDER_STRATEGY.md).
 
 ## The Durable Split
 

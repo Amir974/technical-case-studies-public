@@ -72,6 +72,8 @@ The workflow separates seven jobs:
 
 The core idea is evidence before recommendation, recommendation before decision, and decision before mutation.
 
+For the retrieval strategy behind the helper/evidence layer, see [Search Provider Strategy: Evidence Robustness and Resource-Aware Retrieval](SEARCH_PROVIDER_STRATEGY.md).
+
 ## The Evidence-First Review Loop
 
 The review loop is:
@@ -165,6 +167,7 @@ Links will be added after public export review. Titles are working names and may
 
 - [WORKFLOW_MODEL.md](WORKFLOW_MODEL.md): end-to-end workflow model.
 - [CONTROL_SURFACES.md](CONTROL_SURFACES.md): fast command surface, dense review surface, helper layer, and alternatives.
+- [SEARCH_PROVIDER_STRATEGY.md](SEARCH_PROVIDER_STRATEGY.md): search-provider policy, peer provider routing, usage accounting, and bounded evidence gathering.
 - [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md): responsibility model and Decision and State Mutation Protocol.
 - [SYNTHETIC_PACKET.md](SYNTHETIC_PACKET.md): synthetic/public-safe evidence packet.
 - [SYNTHETIC_EVALUATION.md](SYNTHETIC_EVALUATION.md): synthetic AI assessment.

@@ -7,6 +7,7 @@
 | [README.md](README.md) | Main public-style article and five-minute hub. |
 | [WORKFLOW_MODEL.md](WORKFLOW_MODEL.md) | End-to-end workflow model and diagram. |
 | [CONTROL_SURFACES.md](CONTROL_SURFACES.md) | Surface split, helper layer, and alternatives. |
+| [SEARCH_PROVIDER_STRATEGY.md](SEARCH_PROVIDER_STRATEGY.md) | Search-provider policy, resource-aware retrieval, provider accounting, and bounded evidence gathering. |
 | [AI_RUNTIME_HUMAN_BOUNDARY.md](AI_RUNTIME_HUMAN_BOUNDARY.md) | Responsibility model and mutation protocol. |
 | [SYNTHETIC_PACKET.md](SYNTHETIC_PACKET.md) | Public-safe packet proof artifact. |
 | [SYNTHETIC_EVALUATION.md](SYNTHETIC_EVALUATION.md) | Public-safe assessment example. |
@@ -18,11 +19,12 @@
 |---|---|
 | [IMPLEMENTATION_EVIDENCE.md](IMPLEMENTATION_EVIDENCE.md) | Qualitative implementation evidence. |
 | [IMPLEMENTATION_ACTIVITY_LEDGER.md](IMPLEMENTATION_ACTIVITY_LEDGER.md) | Sanitized milestone ledger. |
-| [CLAIM_REVIEW_NOTES.md](CLAIM_REVIEW_NOTES.md) | Claim discipline and blocked metric notes. |
+| `CLAIM_REVIEW_NOTES.md` (private review note; not included in this public artifact set) | Claim discipline and blocked metric notes. |
 | [synthetic-examples/README.md](synthetic-examples/README.md) | Synthetic example explanation. |
 | [synthetic-examples/signal_packet.synthetic.json](synthetic-examples/signal_packet.synthetic.json) | Compact packet shape. |
 | [synthetic-examples/assessment.synthetic.md](synthetic-examples/assessment.synthetic.md) | Synthetic AI assessment. |
 | [synthetic-examples/commands.synthetic.md](synthetic-examples/commands.synthetic.md) | Generic command examples. |
+| [assets/search-provider-strategy.mmd](assets/search-provider-strategy.mmd) | Mermaid source for the search-provider policy diagram. |
 
 ## Private Review / Support Files
 
