@@ -13,6 +13,7 @@ This model describes the public-safe shape of the External Signal Review Workflo
 | Noisy input | Capture an incoming external signal without assuming it is actionable. | Raw source reference and initial signal shell. |
 | Fact extraction | Pull out stable known facts from available sources. | Known facts, source references, and confidence notes. |
 | Missing facts | Make gaps explicit before recommendation. | Missing fact labels and clarification prompts. |
+| Provider-policy retrieval | When needed, route bounded search requests through a configurable provider policy. | Attributed source evidence, cache status, provider-use notes, and retrieval gaps. |
 | Evidence packet | Convert scattered context into a bounded review contract. | Packet with facts, coverage, risks, allowed decisions, and audit fields. |
 | AI assessment | Ask AI to reason only over the packet. | Recommendation, confidence, risks, gaps, and next human action. |
 | Ranked review queue | Sort items for human attention without pretending rank is final truth. | Review queue with priority and confidence signals. |
@@ -28,3 +29,4 @@ This model describes the public-safe shape of the External Signal Review Workflo
 - Dry-run reconciliation plans stay separate from applied actions.
 - AI assessment does not mutate state.
 - The runtime saves only explicit human-selected transitions.
+- Search-provider routing is evidence gathering, not evaluation authority; see [SEARCH_PROVIDER_STRATEGY.md](SEARCH_PROVIDER_STRATEGY.md).
