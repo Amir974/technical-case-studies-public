@@ -224,7 +224,7 @@ The core diagrams are:
 ## Related Case Studies
 
 - **Published:** AI-Assisted Debugging Layer for Complex Automation.
-- **Forthcoming/planned:** External Signal Review.
+- **Published:** [External Signal Review](../external-signal-review-workflow/) — evidence-first review workflow for noisy external signals.
 - **Forthcoming/planned:** Control Workflow Review.
 - **Forthcoming/planned:** AI Workflow Operations.
 

@@ -28,7 +28,9 @@ Those jobs stay separate:
 
 That separation prevents search results from becoming hidden authority. A provider can return useful material, weak material, conflicting material, or no material. The workflow should record that difference before any recommendation is considered.
 
-## Brave And Tavily As Peer Providers
+In this case study, evidence quality means source attribution, gap coverage, and retrieval provenance; it does not claim provider-level ranking, reranking quality, or measured relevance scoring.
+
+## Peer Provider Routing
 
 Brave and Tavily were introduced as peer providers behind a configurable provider-policy layer.
 
@@ -66,15 +68,15 @@ The provider layer records which provider was used, whether evidence came from c
 
 This reporting is part of resource-aware evidence acquisition. It helps tune provider policy, reduce repeated work through cache reuse, notice weak retrieval patterns, and keep external evidence gathering visible during audit.
 
-## Other Providers Considered
+## Other Provider Categories Deferred For Later
 
-Other provider categories were left open for later implementation rather than presented as fully evaluated:
+Other provider categories were left open for later implementation rather than presented as fully evaluated. These were scoping decisions, not claims about provider capability:
 
 | Category | Why It Remained Later-Stage |
 |---|---|
-| Google/Bing-style search APIs | Cost, quota, policy, and result-shape differences would need separate normalization and accounting work. |
-| Direct ATS/company-careers integrations | Integrations are fragmented and often useful only for narrower structured-role retrieval. |
-| Job-board APIs | These can provide structured role data, but they are narrower than general evidence gathering and introduce provider-specific constraints. |
+| Google/Bing-style search APIs | Additional quota, policy, result-shape, and normalization work was not needed before validating the provider-policy layer. |
+| Domain-specific structured-record integrations | Useful for narrower source types, but fragmented and less appropriate as the first general evidence layer. |
+| Structured catalog or vertical data sources | Potentially useful for structured metadata, but narrower than the broader external-signal review problem. |
 | Manual/browser-assisted context | Useful when automation would be brittle or inappropriate, but it should remain explicit human-controlled enrichment rather than hidden scraping. |
 
 The first goal was to prove provider-policy, accounting, and source-grounded packets, not to maximize provider count.
@@ -116,3 +118,10 @@ The next iteration is stronger reporting around provider behavior and packet imp
 - preserve public-safe diagrams and synthetic examples without exposing private records
 
 The goal remains resource-aware evidence acquisition: gather enough attributed evidence to support review, account for provider use, and keep evaluation and decision authority separate.
+
+## See Also
+
+- [Workflow Model](WORKFLOW_MODEL.md) — where provider-policy retrieval fits in the end-to-end review loop.
+- [Control Surfaces](CONTROL_SURFACES.md) — how dense review and command surfaces expose bounded workflow actions.
+- [Implementation Evidence](IMPLEMENTATION_EVIDENCE.md) and [Implementation Activity Ledger](IMPLEMENTATION_ACTIVITY_LEDGER.md) — sanitized implementation grounding for the broader case study.
+- [Public Artifact Index](PUBLIC_ARTIFACT_INDEX.md) — full reader path for this case study.
