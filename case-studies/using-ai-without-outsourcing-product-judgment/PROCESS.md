@@ -1,7 +1,5 @@
 # Process
 
-**Artifact type:** Portfolio Practice Case Study
-
 ## Operating Model
 
 I use this workflow for AI-era interview assignments where I need to learn quickly, produce a credible artifact, and defend the reasoning live. The core rule is simple: AI can accelerate research, synthesis, critique, mock discovery, and rehearsal, but the product thesis, prioritization, tradeoffs, non-goals, recommendation, and live-defense rationale remain mine.
@@ -11,6 +9,8 @@ The workflow is not a prompt recipe. It is a judgment system for making the reas
 ![Blueprint-style operating model showing AI support above a PM-owned workflow, with judgment gates for source trust, problem framing, prioritization, recommendation, and defense rationale.](assets/diagrams/03-operating-model.png)
 
 *The PM workflow remains the primary path. AI supports research, framing, critique, and rehearsal, while judgment gates stay PM-owned.*
+
+For concrete examples of how this workflow turns into product judgment, see [Examples](EXAMPLES.md).
 
 ## Timebox Reality Check
 
