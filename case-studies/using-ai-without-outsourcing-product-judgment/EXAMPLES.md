@@ -14,6 +14,10 @@ The name gave me a short presentation hook: a lighthouse does not remove fog or 
 
 That was the product metaphor: do not pretend the first wave of coverage is complete; help the user orient under uncertainty.
 
+![FARO Orientation diagram showing incomplete signals, a lighthouse orientation point, and safe-action routing based on coverage and confidence.](assets/diagrams/01-faro-orientation.png)
+
+*FARO shows how incomplete information can still support safe product action when coverage and confidence are made explicit.*
+
 ### Trap
 
 The trap was treating visible scan speed as the main product value. Speed matters, but speed without trust can create false confidence. The harder product work was deciding how the product should communicate confidence, prioritize what mattered, and route users toward safe action when coverage was still incomplete.
