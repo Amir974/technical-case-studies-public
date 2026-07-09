@@ -193,3 +193,5 @@ The output is a decision set:
 I would defend the roadmap as a set of product bets, not a standard converted into tasks. The live discussion would need to test why some gaps became product priorities, why some remained evidence or compliance inputs, and why the sequence created more customer value and trust than a broader checklist implementation.
 
 The private assignment details are not needed for this practice case study to demonstrate the judgment.
+
+[Back to case study README](README.md) · [Back to repository index](../../README.md)

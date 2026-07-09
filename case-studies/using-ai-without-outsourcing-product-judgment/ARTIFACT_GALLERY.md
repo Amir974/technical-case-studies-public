@@ -31,3 +31,5 @@ These accepted diagram sheets support the case study at the pattern level. They 
 ![Responsibility-boundary diagram showing AI assistance feeding into a PM judgment gate before defensible artifact and live-defense outputs.](assets/diagrams/05-responsibility-boundary.png)
 
 *AI can assist the work, but the PM judgment gate controls what becomes defensible output.*
+
+[Back to case study README](README.md) · [Back to repository index](../../README.md)

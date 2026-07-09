@@ -127,3 +127,5 @@ I sometimes turn the material back into a simulated discussion or audio-style wa
 After the assignment, I capture what worked, what broke, what questions came up, where the artifact underexplained the reasoning, and how the process should change next time.
 
 This turns each assignment into a reusable learning system without publishing private prompts, decks, transcripts, or company-specific recommendations.
+
+[Back to case study README](README.md) · [Back to repository index](../../README.md)

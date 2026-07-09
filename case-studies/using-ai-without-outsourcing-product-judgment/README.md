@@ -4,6 +4,23 @@
 
 **Artifact type:** Portfolio Practice Case Study
 
+## Read the supporting pages
+
+- [Process](PROCESS.md) — the repeatable PM operating model.
+- [Examples](EXAMPLES.md) — sanitized product-judgment examples.
+- [Artifact Gallery](ARTIFACT_GALLERY.md) — the five accepted visual sheets.
+- [Back to repository index](../../README.md)
+
+## Reviewer takeaways
+
+- I use AI as a research, critique, and rehearsal accelerator.
+- I do not use it to make the product judgment call.
+- The artifact is designed to show framing, prioritization, tradeoffs, evidence discipline, and live-defense readiness.
+
+## Who this is for
+
+This is written for product leaders, hiring managers, and interviewers evaluating senior PM judgment in AI-era take-home assignments. It is also a public-safe portfolio artifact showing how I use AI as leverage without outsourcing the reasoning being evaluated.
+
 ## 1. The real test is not the deck
 
 Generative AI changed interview assignments. A polished deck is no longer a strong enough signal by itself. It is easier than ever to produce something that looks structured, confident, and complete. The harder question is whether I understood the problem, made the judgment calls myself, and can defend the reasoning when a hiring team probes the details.
@@ -44,6 +61,8 @@ The depth of each step changes by domain; the sequence remains useful.
 
 *The PM workflow remains the primary path. AI supports research, framing, critique, and rehearsal, while judgment gates stay PM-owned.*
 
+For the full workflow, see [Process](PROCESS.md).
+
 ## 4. What AI does, and what I own
 
 The cleanest boundary I have found is this: AI can help me learn faster and challenge harder; it should not make the judgment call that the interview is evaluating.
@@ -60,9 +79,21 @@ I sometimes turn the material back into a simulated discussion or audio-style wa
 
 The ownership line matters. I own the source-trust decisions, the interpretation, the product thesis, the prioritization, the MVP and non-goals, the final recommendation, and the reasoning I would have to defend without the model present.
 
+| AI helps with | I own |
+|---|---|
+| Research compression | Source trust |
+| Mock discovery | Product thesis |
+| Alternative framing | Prioritization |
+| Critique and red-team review | MVP and non-goals |
+| Presentation rehearsal | Live-defense rationale |
+
 ![Responsibility-boundary diagram showing AI assistance feeding into a PM judgment gate before defensible artifact and live-defense outputs.](assets/diagrams/05-responsibility-boundary.png)
 
 *AI can assist the work, but the PM judgment gate controls what becomes defensible output.*
+
+For the complete visual series, see [Artifact Gallery](ARTIFACT_GALLERY.md).
+
+Both examples are public-safe reconstructions at the pattern level; they do not disclose original prompts, submitted materials, or company-specific recommendations. For the expanded examples, see [Examples](EXAMPLES.md).
 
 ## 5. Example A - FARO: progressive value under incomplete coverage
 
@@ -70,7 +101,7 @@ The first example pattern comes from a data-security style problem. The system i
 
 The product concept I used was **FARO - First-wave Assisted Risk Orientation**.
 
-The name gave me a useful presentation hook. **Faro Lighthouse / Faro fyr** is a real Swedish lighthouse on Faro, a Baltic Sea island northeast of Gotland. It is commonly described as standing on the easternmost tip of Faro, built in 1847, and managed by the Swedish Maritime Administration. The story worked because a lighthouse does not remove fog or ensure safe passage. It gives ships a fixed point of orientation when visibility is limited.
+The name gave me a useful presentation hook: **Fårö Lighthouse** is a real lighthouse on the island of Fårö near Gotland. The story worked because a lighthouse does not remove fog, guarantee safe passage, or replace the navigator. It gives people a fixed point of orientation when visibility is limited.
 
 That was the product metaphor: do not pretend the first wave of coverage is complete; help the user orient under uncertainty.
 
