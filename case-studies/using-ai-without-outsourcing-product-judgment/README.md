@@ -2,8 +2,6 @@
 
 *A senior PM workflow for AI-era interview assignments: learning fast, producing a defensible artifact, and owning the live discussion.*
 
-**Artifact type:** Portfolio Practice Case Study
-
 ## Read the supporting pages
 
 - [Process](PROCESS.md) — the repeatable PM operating model.
@@ -23,13 +21,13 @@ This is written for product leaders, hiring managers, and interviewers evaluatin
 
 ## 1. The real test is not the deck
 
-Generative AI changed interview assignments. A polished deck is no longer a strong enough signal by itself. It is easier than ever to produce something that looks structured, confident, and complete. The harder question is whether I understood the problem, made the judgment calls myself, and can defend the reasoning when a hiring team probes the details.
+Generative AI changed interview assignments. A strong deck still matters: it is often what gets a candidate into the room. But the deck is only the entry signal. The harder question is whether I understood the problem, made the judgment calls myself, and can defend the reasoning when a hiring team probes the details.
 
-This practice case study describes the workflow I use for senior PM interview assignments. I use AI heavily, but not as the author of the answer. AI helps me compress research, simulate discovery, compare framings, pressure-test assumptions, and prepare for live discussion. I still own source interpretation, product thesis, prioritization, scope, recommendation, and the rationale I would need to defend in the room.
+This practice case study describes the workflow I use for senior PM interview assignments. I use AI deliberately throughout the workflow, but not as the author of the answer. AI helps me compress research, simulate discovery, compare framings, pressure-test assumptions, and prepare for live discussion. I still own source interpretation, product thesis, prioritization, scope, recommendation, and the rationale I would need to defend in the room.
 
 The process works whether the domain is familiar or unfamiliar. In a familiar fintech assignment, the same structure prevents me from over-relying on muscle memory. In a less familiar security or infrastructure assignment, it helps me ramp quickly without pretending to be a domain-native expert. In both cases, the goal is the same: make the thinking explicit enough that I can defend it live.
 
-The practical goal is not to create a perfect-looking artifact. It is to increase the likelihood that the assignment becomes a serious live discussion, and that I can handle that discussion with evidence, humility, and clear product judgment.
+The practical goal is to produce a strong artifact that earns the live discussion, then be ready to win that discussion with evidence, humility, and clear product judgment.
 
 ## 2. Why this matters now
 
