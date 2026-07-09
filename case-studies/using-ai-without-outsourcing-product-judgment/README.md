@@ -155,6 +155,10 @@ external standard
 -> prioritization logic
 ```
 
+![Roadmap Filter diagram showing an external standard translated through capability mapping, gap classes, and a PM translation filter into focused roadmap bets.](assets/diagrams/04-roadmap-filter.png)
+
+*A standard is input, not the roadmap. The PM translation filter turns many possible gaps into focused roadmap bets, including the choice not to build.*
+
 The private assignment details are not needed for this practice case study to demonstrate the judgment.
 
 ## 7. What I would want a reviewer to take away
